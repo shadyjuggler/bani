@@ -1,0 +1,229 @@
+.Footer {
+    background-color: $bg;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        padding-right: 60px;
+        padding-left: 56px;
+        padding-top: 56px;
+        padding-bottom: 245px;
+    }
+
+    &__main {
+        display: flex;
+        margin-bottom: 52px;
+        justify-content: space-between;
+
+        height: 200px;
+        width: 100%;
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1141px;
+
+            height: 200px;
+
+            width: 100%;
+
+            &-col {
+                color: white;
+            }
+
+            &-col:nth-child(1) {
+                max-width: 325px;
+                width: 100%;
+            }
+
+            &-col:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+                max-width: 570px;
+                width: 100%;
+            }
+        }
+
+        &-dd {
+            padding-top: 9px;
+
+            &-btn {
+                &-title {
+                    font-style: normal;
+                    letter-spacing: 0.8px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &-list {
+                margin-top: 27px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                &-item {
+                    transition: .2s;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+
+        &-buttonUp {
+            padding-top: 5px;
+            display: flex;
+            align-items: flex-start;
+
+            svg {
+                rect {
+                    transition: .2s;
+                    fill: $bg;
+                }
+
+                path {
+                    transition: .2s;
+                    stroke: $white;
+                }
+
+                &:hover {
+                    rect {
+                        fill: $white;
+                    }
+
+                    path {
+                        stroke: $bg;
+                    }
+                }
+            }
+        }
+
+        &-credentials {
+            p {
+                color: white;
+            }
+        }
+
+        &-address {
+            margin-left: 5px;
+            margin-top: 12px;
+        }
+
+        &-phone {
+            margin-left: 5px;
+            margin-top: 7px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &-links {
+            margin-left: 5px;
+            display: flex;
+            gap: 15px;
+            margin-top: 17px;
+
+            svg {
+                transition: .2s;
+                fill: white;
+
+                &:hover {
+                    fill: $accent;
+                }
+            }
+        }
+    }
+
+    &__panel {
+        width: 100%;
+        height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-list {
+            padding-left: 5px;
+            max-width: 1043px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                cursor: pointer;
+                transition: .2s;
+                color: #A2A3B8;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    .plitka {
+        width: 240px;
+        height: 240px;
+
+        overflow: hidden;
+
+        svg {
+            width: 240px;
+            height: 240px;
+        }
+
+        &:nth-of-type(1) {
+            bottom: 0;
+            left: 0;
+        }
+        &:nth-of-type(2) {
+            bottom: 0;
+            left: 240px;
+        }
+        &:nth-of-type(3) {
+            bottom: 0;
+            left: 480px;
+        }
+        &:nth-of-type(4) {
+            bottom: 0;
+            left: 720px;
+        }
+        &:nth-of-type(5) {
+            bottom: 0;
+            left: 960px;
+        }
+        &:nth-of-type(6) {
+            bottom: 0;
+            left: 1200px;
+        }
+        &:nth-of-type(7) {
+            bottom: 0;
+            left: 1440px;
+        }
+        &:nth-of-type(8) {
+            bottom: 0;
+            left: -240px;
+        }
+    }
+
+    .footer-divider {
+        height: 1px;
+        width: 100%;
+        background-color: #5E6080;
+    }
+}

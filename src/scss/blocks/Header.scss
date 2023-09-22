@@ -1,0 +1,182 @@
+.Header {
+    overflow: hidden;
+
+    &__contactInfo {
+        height: 33px;
+        padding: 11px 0px;
+        padding-left: 56px;
+        padding-right: 60px;
+        color: #DEDFF0;
+        background-color: #022238;
+
+        display: flex;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &-item:nth-of-type(2) {
+            margin-left: 26px;
+        }
+
+        &-item:nth-of-type(3) {
+            margin-left: auto;
+        }
+
+        svg {
+            fill: none;
+            stroke: #DEDFF0;
+        }
+    }
+
+    &__slider {
+        height: calc(100vh - 33px);
+
+        transition: .5s;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1,
+                p {
+                    color: $white;
+
+                }
+            }
+
+            .swiper-slide:nth-child(1) {
+                background-image: url("../img//header/headerbg-1.jpg");
+
+                .Header__slider-content-subtitle {
+                    font-size: 18px;
+                }
+            }
+
+            .swiper-slide:nth-child(2) {
+                background-image: url("../img//header/headerbg-2.jpg");
+            }
+
+            .swiper-slide:nth-child(3) {
+                background-image: url("../img//header/headerbg-3.jpg");
+            }
+
+            .swiper-slide:nth-child(4) {
+                background-image: url("../img//header/headerbg-4.jpg");
+            }
+
+            .swiper-slide:nth-child(5) {
+                background-image: url("../img//header/headerbg-5.jpg");
+            }
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            margin: 0;
+
+            top: 65%;
+            display: flex;
+            justify-content: center;
+
+            gap: 16px;
+
+            &-bullet {
+                margin: 0 !important;
+                width: 8px;
+                height: 8px;
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                ;
+                border-radius: 0%;
+
+            }
+
+            &-bullet-active::after {
+                width: 8px;
+                height: 8px;
+                border-radius: 0%;
+                border: 1px solid $white;
+                background-color: $white;
+            }
+        }
+    }
+
+    &__Infobar {
+        height: 0px;
+        background-color: $bg;
+        color: $white;
+
+        transition: .5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-datetime {
+            color: #6C6E84;
+        }
+
+        &-wrapper {
+            margin-top: 10px;
+            max-width: 735px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                max-width: 111px;
+                width: 100%;
+                &-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                &-text {
+                    margin-top: 10px;
+                    color: $white;
+                    text-align: center;
+                    line-height: normal;
+                }
+
+                &-temperature {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 17px;
+                    span {
+                        vertical-align: super;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+        &-divider {
+            transform: translateY(-10px);
+
+            display: block;
+            max-width: 197px;
+            width: 100%;
+            height: 1px;
+            background-color: #5E6080;
+            margin: 0 auto;
+        }
+    }
+
+}

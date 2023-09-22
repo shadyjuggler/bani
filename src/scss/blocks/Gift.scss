@@ -1,0 +1,100 @@
+.Gift {
+    padding-bottom: 99px;
+
+    .container {
+        position: relative;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-wrapper {
+            margin-top: 129px;
+
+            position: relative;
+
+            &-card {
+                position: relative;
+                width: 287.331px;
+                height: 184.129px;
+                background: $bg;
+                border-radius: 10px;
+                z-index: 2;
+            }
+
+            &-card-shadow {
+                bottom: 30px;
+                right: 12px;
+                position: absolute;
+                width: 287.331px;
+                height: 184.129px;
+                background: rgba(200, 172, 166, 0.18);
+                border-radius: 10px;
+                z-index: 1;
+                transform: rotate(9.482deg);
+            }
+        }
+
+        &-text {
+            margin-top: 8px;
+            max-width: 535px;
+        }
+
+        &-title {
+            margin-top: 34px;
+        }
+
+        &-button {
+            margin-top: 27px;
+            padding: 11px 26px;
+            line-height: normal;
+        }
+    }
+
+    .plitka {
+        width: 159px;
+        height: 159px;
+    }
+
+    .plitka:nth-of-type(1) {
+        top: 0;
+        left: 0;
+    }
+
+    .plitka:nth-of-type(2) {
+        top: 159px;
+        left: 160px;
+    }
+
+    .plitka:nth-of-type(3) {
+        top: 318px;
+        left: 0px;
+    }
+
+    .plitka:nth-of-type(4) {
+        top: 477px;
+        left: 160px;
+    }
+
+    .plitka:nth-of-type(5) {
+        top: 0;
+        right: 160px;
+    }
+
+    .plitka:nth-of-type(6) {
+        top: 159px;
+        right: 0px;
+    }
+
+    .plitka:nth-of-type(7) {
+        top: 318px;
+        right: 160px;
+    }
+
+    .plitka:nth-of-type(8) {
+        top: 477px;
+        right: 0px;
+    }
+}

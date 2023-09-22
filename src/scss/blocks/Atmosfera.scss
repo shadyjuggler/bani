@@ -1,0 +1,109 @@
+.Atmosfera {
+    &__header {
+        &-descr {
+            max-width: 651px;
+            margin: 0 auto;
+            margin-top: 11px;
+        }
+    }
+
+    .container {
+        position: relative;
+
+        .plitka:nth-child(1) {
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0;
+        }
+
+        .plitka:nth-child(2) {
+            transform: translateY(-50%);
+            top: 50%;
+            right: 0;
+        }
+    }
+
+    &__main {
+        margin: 0 auto;
+        margin-top: 43px;
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        z-index: 6;
+
+        max-width: 941px;
+        width: 100%;
+
+        &-card {
+            min-height: 450px;
+            max-width: 450px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &-content {
+                transition: .5s;
+                bottom: 0;
+                transform: translateY(100%);
+                position: absolute;
+                padding-bottom: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: column;
+                height: 49%;
+                width: 100%;
+            }
+
+            &-title {
+                margin-top: 9px;
+                color: $white;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 10px;
+                text-transform: uppercase;
+            }
+
+            &-subtitle {
+                margin-top: 11px;
+                color: $white;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 10px;
+                text-transform: uppercase;
+            }
+
+            &-button {
+                margin-top: 68px;
+                padding: 18px 60px;
+            }
+
+            &-link {
+                margin-top: 14px;
+                cursor: pointer;
+                color: $white;
+            }
+
+            &:hover .Atmosfera__main-card-img {
+                filter: blur(4px)
+            }
+
+            &:hover .overlay {
+                opacity: .2;
+            }
+
+            &:hover .Atmosfera__main-card-content {
+                transform: translateY(0%);
+            }
+        }
+    }
+
+    .plitka {
+        width: 250px;
+        height: 250px;
+    }
+
+}

@@ -1,0 +1,35 @@
+@import 'components/vars';
+@import 'components/mixins';
+@import 'components/classes';
+@import 'components/normalize';
+
+// reset
+@import 'components/reset';
+@import 'components/default';
+
+// vendors
+@import 'vendor/swiper-bundle';
+@import 'vendor/aos';
+
+@import 'components/fonts';
+
+
+// blocks
+
+@import 'blocks/Header';
+@import 'blocks/Navbar';
+@import 'blocks/Classes';
+@import 'blocks/Atmosfera';
+@import 'blocks/Female';
+@import 'blocks/Spa';
+@import 'blocks/Author';
+@import 'blocks/Gift';
+@import 'blocks/News';
+@import 'blocks/Feedback';
+@import 'blocks/Questions';
+@import 'blocks/Ready';
+@import 'blocks/Map';
+@import 'blocks/Footer';
+@import 'blocks/Burger';
+
+@import 'helpers/ContactBar';

@@ -1,0 +1,87 @@
+.Author {
+    padding-top: 75px;
+
+    .container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__header {
+        &-title {
+            margin-top: 6px;
+        }
+
+        &-descr {
+            margin: 0 auto;
+            margin-top: 11px;
+            max-width: 711px;
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+
+        button {
+            margin: 0 auto;
+            padding: 11px 50px;
+        }
+    }
+
+    &__galery {
+        position: relative;
+        z-index: 5;
+        max-width: 1175px;
+        margin: 0 auto;
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__plain {
+        margin-top: 56px;
+
+        &-title {
+            max-width: 571px;
+            margin: 0 auto;
+            margin-top: 12px;
+            line-height: 45px;
+        }
+
+        &-subtitle {
+            margin-top: 23px;
+            color: #022238;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        &-img {
+            margin-top: 60px;
+        }
+    }
+
+    .plitka {
+        width: 312px;
+        height: 312px;
+    }
+
+    .plitka:nth-last-of-type(1) {
+        top: 212px;
+        left: -135px;
+    }
+    .plitka:nth-last-of-type(2) {
+        top: 522px;
+        left: -135px;
+    }
+    .plitka:nth-last-of-type(3) {
+        top: 212px;
+        right: -135px;
+    }
+    .plitka:nth-last-of-type(4) {
+        top: 522px;
+        right: -135px;
+    }
+}

@@ -1,0 +1,157 @@
+.Burger {
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 391px;
+    width: 100%;
+    background: #FFF;
+
+    padding: 43px 44px 0px 32px;
+
+    transform: translateX(391px);
+    transition: .5s;
+
+    &__close {
+        display: flex;
+        justify-content: flex-end;
+
+        svg {
+            transition: .2s;
+            stroke: black;
+
+            &:hover {
+                stroke: $accent;
+            }
+        }
+    }
+
+    &__main {
+        margin-top: 39px;
+
+        &-dd {
+            margin-top: 10px;
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-title {
+                &:hover {
+                    cursor: pointer;
+                    transition: .2s;
+                    color: $accent;
+                }
+            }
+
+            &-button {
+                cursor: pointer;
+                width: 26px;
+                height: 26px;
+                border: 1px solid #A2A3B8;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .2s;
+
+                svg {
+                    stroke: #A2A3B8;
+                }
+
+                &:hover {
+                    border: 1px solid $accent;
+
+                    svg {
+                        stroke: $accent;
+                    }
+                }
+
+                &-open {
+                    display: flex;
+                }
+
+                &-close {
+                    display: none;
+                }
+
+
+            }
+
+            &-list {
+                margin-top: 10px;
+                padding-bottom: 13px;
+                display: none;
+                flex-direction: column;
+                transition: .2s;
+
+                &-item {
+                    cursor: pointer;
+                    font-style: normal;
+                    line-height: 36px;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+
+        &-dd-active {
+            .Burger__main-dd-button-open {
+                display: none;
+            }
+
+            .Burger__main-dd-button-close {
+                display: flex;
+            }
+
+            .Burger__main-dd-list {
+                display: flex;
+            }
+        }
+    }
+
+    &__credentials {
+        margin-top: 25px;
+
+        &-phone {
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        &-address {
+            margin-top: 18px;
+            padding-left: 2px;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        &-timetable {
+            margin-top: 2px;
+            padding-left: 2px;
+        }
+    }
+
+    &__mob {
+        display: none;
+    }
+}
+.Burger-blur {
+    position: fixed;
+    z-index: 13;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .5);
+
+    display: none;
+}

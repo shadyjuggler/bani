@@ -1,0 +1,80 @@
+.Feedback {
+    padding-top: 106px;
+
+    &__header {
+        &-title {
+            margin-top: 3px;
+        }
+
+        &-descr {
+            margin-top: 4px;
+        }
+    }
+
+    &__main {
+        margin-top: 49px;
+        max-height: 365px;
+        position: relative;
+
+        &-slider {
+            max-width: 1175px;
+            margin: 0 auto;
+            overflow: hidden;
+            max-height: 365px;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    color: black;
+                    max-width: 365px;
+                    width: 365px;
+                    min-height: 365px;
+                    padding-bottom: 35px;
+
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            &-user {
+                margin-top: 12px;
+                display: flex;
+                gap: 14px;
+            }
+
+            &-text {
+                max-width: 297px;
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            &-link {
+                margin-top: auto;
+                color: #A2A3B8;
+                font-size: 14px;
+
+                &:hover {
+                    color: #022238;
+                }
+            }
+        }
+
+        .swiper-button-prev-feedback,
+        .swiper-button-next-feedback {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+        }
+
+        .swiper-button-prev-feedback {
+            top: 149px;
+            left: 61px;
+        }
+
+        .swiper-button-next-feedback {
+            top: 149px;
+            right: 59px;
+        }
+    }
+}

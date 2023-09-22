@@ -1,0 +1,86 @@
+.Female {
+    padding-top: 87px;
+    padding-bottom: 139px;
+    &__header{
+        &-title {
+            margin-top: 10px;
+        }
+        &-subtitle {
+            margin-top: 7px;
+        }
+        &-descr {
+            max-width: 769px;
+            margin: 0 auto;
+            margin-top: 7px;
+        }
+    }
+
+    &__main {
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 1092px;
+
+        display: flex;
+        justify-content: space-between;
+                
+        &-column {
+            height: 500px;
+            position: relative;
+            z-index: 2;
+            img {
+                position: relative;
+            z-index: 2;
+            }
+        }
+
+        &-column:nth-child(1) {
+            max-width: 250px;
+            overflow: hidden;
+            .plitka:nth-of-type(1) {
+                left: 0;
+                bottom: 247px;
+            }
+            .plitka:nth-of-type(2) {
+                left: 0;
+                bottom: 0;
+            }
+            
+        }
+        &-column:nth-child(2) {
+            max-width: 500px;
+            justify-content: center;
+        }
+        &-column:nth-child(3) {
+            display: grid;
+            max-width: 250px;
+            img {
+                align-self: flex-end;
+            }
+            .plitka {
+                top: 0;
+            }
+        }
+        
+    }
+
+    &__button {
+        margin-top: 40px;
+        button {
+            border: 1px solid black;
+            letter-spacing: normal;
+            margin: 0 auto;
+            padding: 17px 55px;
+            &:hover {
+                border: 1px solid #5E6080;
+            }
+        }
+    }
+    .plitka {
+        width: 250px;
+        height: 250px;
+        svg {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

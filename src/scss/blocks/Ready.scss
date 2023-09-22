@@ -1,0 +1,26 @@
+.Ready {
+    max-width: 1320px;
+    margin: 0 auto;
+    background-color: $bg;
+    padding: 34px 74px 35px 74px;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    &__descr {
+        max-width: 527px;
+    }
+
+    &__button {
+        padding: 16px 38px;
+        font-size: 14px;
+    }
+
+    h2,
+    p {
+        color: $white;
+
+    }
+}

@@ -1,0 +1,139 @@
+.Navbar {
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    top: 40px;
+    z-index: 10;
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    padding-top: 26px;
+    padding-bottom: 24px;
+    padding-left: 46px;
+    padding-right: 58px;
+
+    &__menu {
+        margin-left: 43px;
+        display: flex;
+        gap: 45px;
+
+        &-dd {
+            cursor: pointer;
+            color: $white;
+            margin-top: 6px;
+            border-bottom: 0px solid $accent;
+
+            &-list {
+                margin-top: 14px;
+                position: absolute;
+                padding-top: 20px;
+                padding-left: 25px;
+                padding-bottom: 19px;
+                width: 183px;
+                height: 169px;
+                background-color: $bg;
+
+                opacity: 0;
+                transition: .2s;
+                transform: translateX(-29px);
+
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &-item {
+                    line-height: normal;
+                }
+            }
+
+            &-list:hover {
+                opacity: 1;
+                display: flex;
+            }
+
+            &-list::after {
+                content: "";
+                position: absolute;
+                top: -14px;
+                width: 100%;
+                height: 14px;
+                transform: translateX(-29px);
+            }
+
+            &-list::before {
+                content: "";
+                position: absolute;
+                top: -8px;
+                left: 45px;
+                border-left: 8px solid transparent; 
+                border-right: 8px solid transparent; 
+                border-bottom: 10px solid $bg;
+            }
+        }
+
+        &-dd::before {
+            content: "";
+            top: 25px;
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 1px;
+            background-color: $accent;
+            border-bottom: 1px solid $accent;
+            opacity: 0;
+            transition: .2s;
+        }
+
+        &-dd:hover {
+            &::before {
+                opacity: 1;
+                display: flex;
+            }
+        }
+
+        &-dd:hover {
+            .Navbar__menu-dd-list {
+                display: flex;
+                opacity: 1;
+                // transform: translateY(0px);
+            }
+        }
+    }
+
+    &__buttons {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        &-item {
+            font-size: 14px;
+        }
+
+        &-item:nth-child(1) {
+            padding-right: 35px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover {
+                background-color: $white;
+                color: $bg;
+            }
+        }
+
+        &-item:nth-child(2) {
+            padding-right: 18px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover {
+                border: 0.7px solid $white;
+                background-color: $white;
+                color: $accent;
+            }
+        }
+
+        
+    }
+}
