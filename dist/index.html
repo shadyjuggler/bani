@@ -49,7 +49,8 @@
 
 	<nav class="Navbar">
     <div class="container">
-        <img src="./img/logo.png" alt="">
+        <img src="./img/logo.png" class="Navbar__logo" alt="logo">
+        <img src="./img/logo-mob.png" class="Navbar__logo-mob" alt="logo">
 
         <ul class="Navbar__menu text">
             <li class="Navbar__menu-dd">
@@ -419,7 +420,7 @@
                     </div>
                     <p class="Atmosfera__main-card-title">VIP-комнатА</p>
                     <p class="Atmosfera__main-card-subtitle">до 5 гостей</p>
-                    <button class="Atmosfera__main-card-button button-white">Забронировать</button>
+                    <button class="Atmosfera__main-card-button button-gray">Забронировать</button>
                     <a href="#" class="Atmosfera__main-card-link link-underline">Подробнее</a>
                 </div>
                 <div class="overlay">
@@ -438,7 +439,7 @@
                     </div>
                     <p class="Atmosfera__main-card-title">VIP-комнатА</p>
                     <p class="Atmosfera__main-card-subtitle">до 5 гостей</p>
-                    <button class="Atmosfera__main-card-button button-white">Забронировать</button>
+                    <button class="Atmosfera__main-card-button button-gray">Забронировать</button>
                     <a href="#" class="Atmosfera__main-card-link link-underline">Подробнее</a>
                 </div>
                 <div class="overlay">
@@ -449,37 +450,39 @@
     </div>
 </div>
 	<div class="Female">
-    <div class="Female__header text-align-cen">
-        <img src="./img/flower.png" alt="flower" class="Female__header-img">
-        <h2 class="Female__header-title">Женская баня</h2>
-        <p class="Female__header-subtitle text" style="color: #5E6080;">С понедельника по среду в высшем разряде</p>
-        <p class="Female__header-descr text">Атмосфера пространства высшего разряда — уединенная и душевная. Здесь так и хочется задержаться. Поэтому специально для женщин мы продлили сеансы посещения с 3 до 4 часов, чтобы все успеть — хорошо попариться, насладиться СПА-программами и выпить целебный травяной сбор.</p>
-    </div>
-
+    <div class="container">
+        <div class="Female__header text-align-cen">
+            <img src="./img/flower.png" alt="flower" class="Female__header-img">
+            <h2 class="Female__header-title">Женская баня</h2>
+            <p class="Female__header-subtitle text" style="color: #5E6080;">С понедельника по среду в высшем разряде</p>
+            <p class="Female__header-descr text">Атмосфера пространства высшего разряда — уединенная и душевная. Здесь так и хочется задержаться. Поэтому специально для женщин мы продлили сеансы посещения с 3 до 4 часов, чтобы все успеть — хорошо попариться, насладиться СПА-программами и выпить целебный травяной сбор.</p>
+        </div>
     
-    <div class="Female__main">
-        <div class="Female__main-column">
-            <img src="../img/female/female-1.jpg" alt="female">
-            
-            <span class="plitka plitka-invisible">
-            </span>
-            <span class="plitka plitka-invisible">
-            </span>
+        
+        <div class="Female__main">
+            <div class="Female__main-column">
+                <img src="../img/female/female-1.jpg" alt="female">
                 
-        </div>
-        <div class="Female__main-column">
-            <img src="../img/female/female-2.jpg" alt="female">
-        </div>
-        <div class="Female__main-column">
-            <span class="plitka plitka-invisible">
-            </span>
-            <img src="../img/female/female-3.jpg" alt="female">
-        </div>
-    </div>                                            
-
+                <span class="plitka plitka-invisible">
+                </span>
+                <span class="plitka plitka-invisible">
+                </span>
+                    
+            </div>
+            <div class="Female__main-column">
+                <img src="../img/female/female-2.jpg" alt="female">
+            </div>
+            <div class="Female__main-column">
+                <span class="plitka plitka-invisible">
+                </span>
+                <img src="../img/female/female-3.jpg" alt="female">
+            </div>
+        </div>                                            
     
-    <div class="Female__button">
-        <button class=" button-gray">Подробнее</button>
+        
+        <div class="Female__button">
+            <button class=" button-gray">Подробнее</button>
+        </div>
     </div>
 </div>
 	<div class="Spa">
@@ -1001,47 +1004,7 @@
     </div>
 </div>
 
-	<div class="ContactBar">
-    <a href="#" class="ContactBar__button">
-        <svg width="32" height="36" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M25.1636 17.7122C25.1636 16.7042 24.8727 15.5522 24.4364 14.5442C23.1273 11.9522 20.6546 10.5122 18.0364 10.5122"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-            <path
-                d="M29.3818 17.712C29.3818 15.984 28.9455 14.4 28.2182 12.816C26.3273 8.78398 22.2546 6.47998 18.0364 6.47998"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-            <path
-                d="M18.3273 23.3281L16.2909 25.2001L16 25.6321L14.9818 26.6401C14.9818 26.6401 12.5091 25.0561 10.7636 22.6081C9.01818 20.3041 7.70909 18.0001 7.70909 18.0001L11.9273 15.2641L7.12727 8.64014L4.36364 10.5121C4.36364 10.5121 1.30909 12.2401 4.21818 18.2881C7.12727 24.3361 12.5091 28.8001 12.5091 28.8001C12.5091 28.8001 17.3091 33.1201 20.9455 32.2561L21.8182 31.3921L22.2545 31.1041L24.2909 29.2321L18.3273 23.3281Z"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-        </svg>
-
-    </a>
-    <a href="#" class="ContactBar__button">
-        <svg width="38" height="31" viewBox="0 0 38 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.6308 8.11886V4.28076H3.36157V17.2712H5.55388V20.5189L8.76926 17.2712H12.4231"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-            <path d="M15.2004 19.9283V10.7759H33.6158V23.7664H31.4235V27.014L28.2081 23.7664H15.2004V17.4187"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-            <path d="M20.4615 16.2383H19V17.7145H20.4615V16.2383Z" fill="#484751" />
-            <path d="M24.8462 16.2383H23.3846V17.7145H24.8462V16.2383Z" fill="#484751" />
-            <path d="M29.2311 16.2383H27.7695V17.7145H29.2311V16.2383Z" fill="#484751" />
-        </svg>
-
-    </a>
-    <a href="#" class="ContactBar__button">
-        <svg width="36" height="33" viewBox="0 0 36 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.3091 18.645H6.87271L2.94543 28.05H31.0909L27.1636 18.645H23.7273" stroke-width="0.7"
-                stroke-miterlimit="10" stroke-linecap="square" />
-            <path
-                d="M24.0545 10.3948C24.0545 11.5498 23.7273 12.5398 23.4 13.5298C22.2545 15.8398 17.1818 23.0998 17.1818 23.0998C17.1818 23.0998 11.9454 15.8398 10.8 13.5298C10.3091 12.7048 9.98181 11.5498 9.98181 10.3948C9.98181 6.4348 13.0909 3.2998 17.0182 3.2998C20.7818 3.2998 24.0545 6.4348 24.0545 10.3948Z"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-            <path
-                d="M17.0181 12.2096C18.0123 12.2096 18.8181 11.397 18.8181 10.3946C18.8181 9.39219 18.0123 8.57959 17.0181 8.57959C16.024 8.57959 15.2181 9.39219 15.2181 10.3946C15.2181 11.397 16.024 12.2096 17.0181 12.2096Z"
-                stroke-width="0.7" stroke-miterlimit="10" stroke-linecap="square" />
-        </svg>
-
-    </a>
-</div>
+	
 	<div class="Burger">
     <div class="Burger__close">
         <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1197,6 +1160,7 @@
 			<div class="Footer__main-content">
 				<div class="Footer__main-content-col">
 					<img src="./img/logo-footer.png" alt="logo" class="Footer__main-logo">
+					<img src="./img/logo-footer-mob.png" alt="logo" class="Footer__main-logo-mob">
 					<div class="Footer__main-credentials">
 						<p class="Footer__main-address text">г. Москва, ул. Молодежная 4а</p>
 						<p class="Footer__main-phone text">+7 000 000 00 00</p>
@@ -1373,12 +1337,18 @@
 		});
 
 		const spaSlider = new Swiper(".Spa__slider", {
-			slidesPerView: 3,
-			spaceBetween: 40,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-spaslider',
 				prevEl: '.swiper-button-prev-spaslider',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				}
+			}
 		})
 
 		const spaSlider2 = new Swiper(".Spa__slider2", {
@@ -1390,21 +1360,33 @@
 		})
 
 		const newsSlider = new Swiper(".News__slider", {
-			slidesPerView: 4,
-			spaceBetween: 41,
+			slidesPerView: 3,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-newsSlider',
 				prevEl: '.swiper-button-prev-newsSlider',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 41
+				}
+			}
 		})
 
 		const feedbackSlider = new Swiper(".Feedback__main-slider", {
-			slidesPerView: 3,
-			spaceBetween: 40,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-feedback',
 				prevEl: '.swiper-button-prev-feedback',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				}
+			}
 		})
 	})
 

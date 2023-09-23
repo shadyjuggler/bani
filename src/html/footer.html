@@ -4,6 +4,7 @@
 			<div class="Footer__main-content">
 				<div class="Footer__main-content-col">
 					<img src="./img/logo-footer.png" alt="logo" class="Footer__main-logo">
+					<img src="./img/logo-footer-mob.png" alt="logo" class="Footer__main-logo-mob">
 					<div class="Footer__main-credentials">
 						<p class="Footer__main-address text">г. Москва, ул. Молодежная 4а</p>
 						<p class="Footer__main-phone text">+7 000 000 00 00</p>
@@ -180,12 +181,18 @@
 		});
 
 		const spaSlider = new Swiper(".Spa__slider", {
-			slidesPerView: 3,
-			spaceBetween: 40,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-spaslider',
 				prevEl: '.swiper-button-prev-spaslider',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				}
+			}
 		})
 
 		const spaSlider2 = new Swiper(".Spa__slider2", {
@@ -197,21 +204,33 @@
 		})
 
 		const newsSlider = new Swiper(".News__slider", {
-			slidesPerView: 4,
-			spaceBetween: 41,
+			slidesPerView: 3,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-newsSlider',
 				prevEl: '.swiper-button-prev-newsSlider',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 41
+				}
+			}
 		})
 
 		const feedbackSlider = new Swiper(".Feedback__main-slider", {
-			slidesPerView: 3,
-			spaceBetween: 40,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-feedback',
 				prevEl: '.swiper-button-prev-feedback',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				}
+			}
 		})
 	})
 
