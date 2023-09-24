@@ -8,7 +8,15 @@
         display: flex;
         align-items: flex-start;
     }
-
+    &__calendar {
+        display: none;
+    }
+    &__title-mob {
+        display: none;
+    }
+    &__logo-mob {
+        display: none;
+    }
     padding-top: 26px;
     padding-bottom: 24px;
     padding-left: 46px;

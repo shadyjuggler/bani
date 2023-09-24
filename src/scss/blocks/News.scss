@@ -5,6 +5,11 @@
 
     .container {
         position: relative;
+        overflow: hidden;
+    }
+
+    &__slider-form-mob {
+        display: none;
     }
 
     &__button {

@@ -14,6 +14,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1,
@@ -89,7 +90,6 @@ h4 {
 @media (max-width: 768px) {
   h1 {
     font-size: 55px;
-
   }
 
   h2 {
@@ -259,6 +259,7 @@ button {
 }
 
 .button-gray {
+  background-color: $white;
   border: 1px solid #5E6080;
   color: black;
 
@@ -330,7 +331,10 @@ button {
   background-size: cover;
   transition: .06s;
   transition-delay: 1s;
+}
 
+.plitka-mob {
+  display: none;
 }
 
 .plitka-full {

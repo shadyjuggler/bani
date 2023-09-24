@@ -1,6 +1,10 @@
 .Female {
     padding-top: 87px;
     padding-bottom: 139px;
+    .container {
+        overflow: hidden;
+    }
+
     &__header{
         &-title {
             margin-top: 10px;
@@ -22,6 +26,10 @@
 
         display: flex;
         justify-content: space-between;
+
+        &-slider-mob {
+            display: none;
+        }
                 
         &-column {
             height: 500px;
@@ -53,6 +61,7 @@
         &-column:nth-child(3) {
             display: grid;
             max-width: 250px;
+            overflow: hidden;
             img {
                 align-self: flex-end;
             }

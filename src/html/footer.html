@@ -4,6 +4,7 @@
 			<div class="Footer__main-content">
 				<div class="Footer__main-content-col">
 					<img src="./img/logo-footer.png" alt="logo" class="Footer__main-logo">
+					<img src="./img/logo-footer-mob.png" alt="logo" class="Footer__main-logo-mob">
 					<div class="Footer__main-credentials">
 						<p class="Footer__main-address text">г. Москва, ул. Молодежная 4а</p>
 						<p class="Footer__main-phone text">+7 000 000 00 00</p>
@@ -145,9 +146,9 @@
 
 	document.addEventListener("DOMContentLoaded", () => {
 		const headerSwiper = new Swiper('.Header__slider', {
-			autoplay: {
-				delay: 4000
-			},
+			// autoplay: {
+			// 	delay: 4000
+			// },
 			effect: "fade",
 			pagination: {
 				el: '.swiper-pagination',
@@ -180,12 +181,29 @@
 		});
 
 		const spaSlider = new Swiper(".Spa__slider", {
-			slidesPerView: 3,
+			slidesPerView: 1,
+			centeredSlides: true,
 			spaceBetween: 40,
 			navigation: {
 				nextEl: '.swiper-button-next-spaslider',
 				prevEl: '.swiper-button-prev-spaslider',
 			},
+			pagination: {
+				el: '.swiper-pagination-mob',
+				clickable: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+					centeredSlides: false
+				},
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+					centeredSlides: false,
+				}
+			}
 		})
 
 		const spaSlider2 = new Swiper(".Spa__slider2", {
@@ -197,32 +215,78 @@
 		})
 
 		const newsSlider = new Swiper(".News__slider", {
-			slidesPerView: 4,
-			spaceBetween: 41,
+			slidesPerView: 1,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-newsSlider',
 				prevEl: '.swiper-button-prev-newsSlider',
 			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 41
+				},
+				1200: {
+					slidesPerView: 4,
+					spaceBetween: 41
+				}
+			}
+		})
+
+		const newsSliderMob = new Swiper(".News__slider-form-mob", {
 		})
 
 		const feedbackSlider = new Swiper(".Feedback__main-slider", {
-			slidesPerView: 3,
-			spaceBetween: 40,
+			slidesPerView: 2,
+			spaceBetween: 20,
 			navigation: {
 				nextEl: '.swiper-button-next-feedback',
 				prevEl: '.swiper-button-prev-feedback',
 			},
+			breakpoints: {
+				1200: {
+					slidesPerView: 3,
+					spaceBetween: 40
+				}
+			}
+		})
+
+		const classesMob1 = new Swiper(".Classes__main-form-slider-mob-1", {
+			slidesPerView: 1
+		})
+		const classesMob2 = new Swiper(".Classes__main-form-slider-mob-2", {
+			slidesPerView: 1
+		})
+		const footer = new Swiper(".Female__slider-mob", {
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
 		})
 	})
 
 	function openHeaderInfobar() {
+		let infoBarHeight;
+		let topbar;
+		if (window.innerWidth < 768) {
+			const content = document.querySelectorAll(".Header__slider-content");
+			content.forEach(item => item.style.cssText = "transform: translateY(65px)");
+			infoBarHeight = "214px";
+			topbar = "0px"
+		} else {
+			infoBarHeight = "150px";
+			topbar = "33px"
+		}
+
 		const infobar = document.querySelector(".Header__Infobar");
 		const slider = document.querySelector(".Header__slider");
 
-		infobar.style.height = "150px";
+		infobar.style.height = infoBarHeight;
+		infobar.style.paddingTop = "15px";
 		// infobar.style.display = "flex";
 
-		slider.style.height = "calc(100vh - 33px - 150px)";
+		slider.style.height = `calc(100vh - ${topbar} - ${infoBarHeight})`;
 	}
 
 

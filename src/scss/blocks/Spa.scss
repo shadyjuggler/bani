@@ -1,7 +1,11 @@
 .Spa {
     background-color: $bg;
     padding-top: 60px;
-    padding-bottom: 150px;
+    padding-bottom: 59px;
+
+    // .container {
+    //     overflow: hidden;
+    // }
 
 
     &__header {
@@ -14,7 +18,8 @@
         width: 100%;
         min-height: 360px;
 
-        #curtainLeft, #curtainRight {
+        #curtainLeft,
+        #curtainRight {
             position: absolute;
             top: 0px;
         }
@@ -33,7 +38,7 @@
 
         #curtainInvisble {
             // opacity: 0;
-        } 
+        }
 
         h2,
         p {
@@ -71,6 +76,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 90px;
 
         &-header {
 
@@ -174,11 +180,45 @@
         .swiper-button-prev-spaslider {
             top: 173px;
             left: 61px;
+            z-index: 11;
         }
 
         .swiper-button-next-spaslider {
             top: 173px;
             right: 59px;
+            z-index: 11;
+        }
+
+        .swiper-pagination, .swiper-pagination-mob {
+            display: none;
+            margin: 0;
+            position: absolute;
+            justify-content: center;
+            gap: 16px;
+
+            bottom: -38px;
+            z-index: 10;
+
+            &-bullet {
+                margin: 0 !important;
+                width: 8px;
+                height: 8px;
+                background-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 0%;
+
+                &:hover {
+                    border: 1px solid $white;
+                }
+            }
+
+            &-bullet-active::after {
+                width: 8px;
+                height: 8px;
+                border-radius: 0%;
+                border: 1px solid $white;
+                background-color: $white;
+            }
         }
     }
 
@@ -201,6 +241,7 @@
             display: flex;
 
             transition: .2s;
+
 
             &_img {
                 width: 100%;

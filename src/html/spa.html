@@ -5,7 +5,7 @@
                 <img src="../img/spa/spa-1.jpg" alt="">
             </div>
             <div id="curtainInvisble" class="Spa__header-col">
-                <h2 class="Spa__header-title">спа-расслабление</h2>
+                <h2 class="Spa__header-title">спа<span class="break-word">-</span><span class="breaked">расслабление</span></h2>
                 <p class="Spa__header-descr text">Теперь в «Перловских банях» работают 2 кабинета для классического
                     сухого массажа и 3 кабинета для влажных процедур. А еще можно заказать обертывания, пилинги, мытье
                     головы с точечным массажем и многое другое.</p>
@@ -83,6 +83,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination swiper-pagination-mob"></div>
             </div>
 
             <div class="swiper-button-prev-spaslider arrow">
@@ -119,9 +120,9 @@
                     <p class="Spa__update-col-content-text text">
                         Наша цель — подарить гостям лучший банный опыт, глубокое расслабление и заботу о здоровье. <br>
                         <br> Поэтому мы разобрали и заново построили «Перловские бани»: создали уютный, но
-                        функциональный интерьер, добавили целый банный разряд на третьем этаже, добавили сеансы
-                        ароматных парений и СПА-программы. А еще в «Перловских банях» теперь есть полноценная кухня с
-                        авторским меню от бренд-шефа.
+                        функциональный интерьер, добавили целый банный разряд<span id="Spa__toDelete"> на третьем этаже, добавили сеансы
+                            ароматных парений и СПА-программы. А еще в «Перловских банях» теперь есть полноценная кухня с
+                            авторским меню от бренд-шефа.</span>
                     </p>
                     <button class="Spa__update-col-content-button">Подробнее о банях</button>
                 </div>
@@ -135,37 +136,39 @@
                 <span class="plitka plitka-full"></span>
             </div>
         </div>
+
+        <div class="Spa__fire">
+            <div class="Spa__fire-header text-align-cen">
+                <img src="./img/flower-white.png" alt="flower" class="Classes__header-img">
+                <h2 class="Spa__fire-header-title">tехнологичные печи</h2>
+                <p class="Spa__fire-header-descr text">Парные «Перловских Бань» единственные в Москве оборудованы
+                    уникальными каменками SANGENS, которые в любой момент посещения дарят гостям эффект первого пара. Как
+                    традиционная дровяная печь, которую разожгли специально для вас.</p>
+                <a href="#" class="Spa__fire-header-link link-underline">Подробнее</a>
+            </div>
+    
+            <div class="Spa__fire-player">
+    
+                <video id="fire-video" class="video-js" muted controls data-setup="{}">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+    
+                <span class="plitka plitka-half"></span>
+                <span class="plitka plitka-half"></span>
+                <span class="plitka plitka-half"></span>
+            </div>
+    
+            
+    
+        </div>
     </div>
 
-    <div class="Spa__fire">
-        <div class="Spa__fire-header text-align-cen">
-            <img src="./img/flower-white.png" alt="flower" class="Classes__header-img">
-            <h2 class="Spa__fire-header-title">tехнологичные печи</h2>
-            <p class="Spa__fire-header-descr text">Парные «Перловских Бань» единственные в Москве оборудованы
-                уникальными каменками SANGENS, которые в любой момент посещения дарят гостям эффект первого пара. Как
-                традиционная дровяная печь, которую разожгли специально для вас.</p>
-            <a href="#" class="Spa__fire-header-link link-underline">Подробнее</a>
-        </div>
-
-        <div class="Spa__fire-player">
-
-            <video id="fire-video" class="video-js" muted controls data-setup="{}">
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                </p>
-            </video>
-
-            <span class="plitka plitka-half"></span>
-            <span class="plitka plitka-half"></span>
-            <span class="plitka plitka-half"></span>
-        </div>
-
-        
-
-    </div>
+    
 
 
 </div>

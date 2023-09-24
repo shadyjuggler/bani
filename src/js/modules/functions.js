@@ -22,6 +22,12 @@ export function fixedNavbar(navbar) {
 
 	window.addEventListener('scroll', () => {
 
+		const navbarLogoMob = document.querySelector(".Navbar__logo-mob");
+		const buttonAccent = document.querySelector(".button-accent");
+		const navbarCalendar = document.querySelector(".Navbar__calendar");
+		const navbarTitleMob = document.querySelector(".Navbar__title-mob");
+		const Navbar = document.querySelector(".Navbar");
+
 		let currentScrollPosition = window.scrollY || window.pageYOffset;
 
 		if (navYfixed < currentScrollPosition) {
@@ -32,16 +38,36 @@ export function fixedNavbar(navbar) {
 				z-index: 14;
 				background-color: #022238;
 			`;
+
+			if (window.innerWidth < 768) {
+				navbarLogoMob.style.display = "none";
+				buttonAccent.style.display = "none";
+				navbarCalendar.style.display = "block";
+				navbarTitleMob.style.display = "block";
+				Navbar.style.paddingTop = "0px";
+			}
 		} else {
 			nav.style.cssText = `
 				position: absolute;
 			`;
+			if (window.innerWidth < 768) {
+				navbarLogoMob.style.display = "block";
+				buttonAccent.style.display = "block";
+				navbarCalendar.style.display = "none";
+				navbarTitleMob.style.display = "none";
+				// Navbar.style.cssText = "padding-top: 15px";
+
+			} else {
+				navbarCalendar.style.display = "none";
+				navbarLogoMob.style.display = "none";
+			}
+
 		}
 		// console.log(currentScrollPosition)
 	});
 }
 
-export function openBurger () {
+export function openBurger() {
 	const openBtn = document.querySelector(".burger-menu")
 	const closeBtn = document.querySelector(".Burger__close svg");
 	const burger = document.querySelector(".Burger");
@@ -88,7 +114,7 @@ export function curtains(navbar) {
 		if (animationEnd > currentScrollPosition && currentScrollPosition > animationStart) {
 			curtainLeft.style.cssText = `left: ${raznica / 0.750}px`
 			curtainRight.style.cssText = `right: ${raznica / 0.750}px`
-			
+
 			let opacity = Math.floor(100 - (opacityRaznica / opacitySpace) * 100);
 			curtainInvisible.style.cssText = `opacity: ${opacity}%`;
 		}
@@ -97,7 +123,7 @@ export function curtains(navbar) {
 			console.log("end")
 		}
 
-	
+
 		// console.log(currentScrollPosition)
 	});
 }
